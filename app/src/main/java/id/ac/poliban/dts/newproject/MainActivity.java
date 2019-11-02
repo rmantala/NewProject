@@ -35,8 +35,6 @@ public class MainActivity extends AppCompatActivity {
 
         btTampilNama = findViewById(R.id.btTampilNama);
 
-        tvListDataTeman = findViewById(R.id.tvListDataTeman);
-
         btTampilDataTeman = findViewById(R.id.btTampilDataTeman);
 
         btTampilGambar = findViewById(R.id.btTampilGambar);
