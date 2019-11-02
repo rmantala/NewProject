@@ -45,15 +45,6 @@
         app:layout_constraintStart_toStartOf="@+id/btTampilDataTeman"
         app:layout_constraintTop_toBottomOf="@+id/btTampilDataTeman" />
 
-    <Button
-        android:id="@+id/btTampilLocationBaseServices"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="24dp"
-        android:text="Tampilkan Location Base Services"
-        app:layout_constraintStart_toStartOf="@+id/btTampilGambar"
-        app:layout_constraintTop_toBottomOf="@+id/btTampilGambar" />
-
     <TextView
         android:id="@+id/tvListDataTeman"
         android:layout_width="184dp"
@@ -78,8 +69,8 @@
         android:id="@+id/btBuatTableTeman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="16dp"
+        android:layout_marginTop="24dp"
         android:text="Buat Table Teman"
-        app:layout_constraintStart_toStartOf="@+id/btTampilLocationBaseServices"
-        app:layout_constraintTop_toBottomOf="@+id/btTampilLocationBaseServices" />
+        app:layout_constraintStart_toStartOf="@+id/btTampilGambar"
+        app:layout_constraintTop_toBottomOf="@+id/btTampilGambar" />
 </androidx.constraintlayout.widget.ConstraintLayout>
