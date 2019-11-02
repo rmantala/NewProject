@@ -7,11 +7,20 @@
     tools:context=".GambarActivity">
 
     <ImageView
+        android:id="@+id/imgPhoto"
         android:src="@drawable/sukarno"
         android:layout_centerInParent="true"
         android:adjustViewBounds="true"
         android:fitsSystemWindows="true"
         android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <Button
+        android:id="@+id/btHapusGambar"
+        android:text="Hapus Gambar"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
 
 </RelativeLayout>

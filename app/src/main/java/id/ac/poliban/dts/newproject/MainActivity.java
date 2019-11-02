@@ -1,5 +1,6 @@
 package id.ac.poliban.dts.newproject;
 
+import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -65,6 +66,13 @@ public class MainActivity extends AppCompatActivity {
 
 
             tvListDataTeman.setText(namaTeman);
+
+            new AlertDialog.Builder(this)
+                    .setTitle("info")
+                    .setMessage(namaTeman)
+                    .setPositiveButton("OK", (dialog, which) -> {
+                        //
+                    }).show();
         });
 
         //tampil gambar
