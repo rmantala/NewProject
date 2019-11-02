@@ -20,6 +20,8 @@ public class MainActivity extends AppCompatActivity {
 
     Button btTampilLocationBaseServices;
 
+    Button btBuatTable;
+
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -31,6 +33,7 @@ public class MainActivity extends AppCompatActivity {
 
         //deklarasi komponen
         etNama = findViewById(R.id.etNama);
+
         btTampilNama = findViewById(R.id.btTampilNama);
 
         tvListDataTeman = findViewById(R.id.tvListDataTeman);
@@ -40,6 +43,8 @@ public class MainActivity extends AppCompatActivity {
         btTampilGambar = findViewById(R.id.btTampilGambar);
 
         btTampilLocationBaseServices = findViewById(R.id.btTampilLocationBaseServices);
+
+        btBuatTable = findViewById(R.id.btBuatTableTeman);
 
 
         //tampil nama
@@ -74,8 +79,15 @@ public class MainActivity extends AppCompatActivity {
 
         //location base service
         btTampilLocationBaseServices.setOnClickListener(v -> {
-            //belum
+            Intent intent = new Intent(this, MapsActivity.class);
+            startActivity(intent);
         });
+
+        btBuatTable.setOnClickListener(v -> {
+            FriendSQL db = new FriendSQL(this);
+            Toast.makeText(this, "table friend berhasil dibuat", Toast.LENGTH_SHORT).show();
+        });
+
 
     }
 }
