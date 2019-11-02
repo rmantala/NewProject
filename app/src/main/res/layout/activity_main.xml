@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginTop="32dp"
+        android:layout_marginBottom="8dp"
+        android:text="Masukkan Nama Anda"
+        app:layout_constraintBottom_toTopOf="@+id/etNama"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/etNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="12dp"
+        android:ems="10"
+        android:inputType="textPersonName"
+        app:layout_constraintBottom_toTopOf="@+id/btTampilNama"
+        app:layout_constraintStart_toStartOf="@+id/textView"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <Button
+        android:id="@+id/btTampilNama"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="86dp"
+        android:text="Tampil Nama"
+        app:layout_constraintBottom_toTopOf="@+id/tvListDataTeman"
+        app:layout_constraintStart_toStartOf="@+id/etNama"
+        app:layout_constraintTop_toBottomOf="@+id/etNama" />
+
+    <Button
+        android:id="@+id/btTampilGambar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="27dp"
+        android:text="Tampilkan Gambar"
+        app:layout_constraintBottom_toTopOf="@+id/btTampilLocationBaseServices"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTampilDataTeman" />
+
+    <Button
+        android:id="@+id/btTampilLocationBaseServices"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="56dp"
+        android:text="Tampilkan Location Base Services"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTampilGambar" />
+
+    <TextView
+        android:id="@+id/tvListDataTeman"
+        android:layout_width="314dp"
+        android:layout_height="0dp"
+        android:layout_marginStart="32dp"
+        android:layout_marginBottom="11dp"
+        android:background="@android:color/darker_gray"
+        android:text="data teman - teman"
+        android:maxLines="3"
+        app:layout_constraintBottom_toTopOf="@+id/btTampilDataTeman"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btTampilNama" />
+
+    <Button
+        android:id="@+id/btTampilDataTeman"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="54dp"
+        android:text="Tampil Data Teman"
+        app:layout_constraintBottom_toTopOf="@+id/btTampilGambar"
+        app:layout_constraintStart_toStartOf="@+id/tvListDataTeman"
+        app:layout_constraintTop_toBottomOf="@+id/tvListDataTeman" />
+</androidx.constraintlayout.widget.ConstraintLayout>
