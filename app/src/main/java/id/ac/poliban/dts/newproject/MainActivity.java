@@ -65,8 +65,6 @@ public class MainActivity extends AppCompatActivity {
                 namaTeman += data[i] + "\n";
 
 
-            tvListDataTeman.setText(namaTeman);
-
             new AlertDialog.Builder(this)
                     .setTitle("info")
                     .setMessage(namaTeman)

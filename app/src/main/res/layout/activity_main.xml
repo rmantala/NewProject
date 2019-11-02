@@ -45,25 +45,14 @@
         app:layout_constraintStart_toStartOf="@+id/btTampilDataTeman"
         app:layout_constraintTop_toBottomOf="@+id/btTampilDataTeman" />
 
-    <TextView
-        android:id="@+id/tvListDataTeman"
-        android:layout_width="184dp"
-        android:layout_height="91dp"
-        android:layout_marginTop="8dp"
-        android:background="@android:color/darker_gray"
-        android:maxLines="3"
-        android:text="data teman - teman"
-        app:layout_constraintStart_toStartOf="@+id/btTampilNama"
-        app:layout_constraintTop_toBottomOf="@+id/btTampilNama" />
-
     <Button
         android:id="@+id/btTampilDataTeman"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="8dp"
+        android:layout_marginTop="24dp"
         android:text="Tampil Data Teman"
-        app:layout_constraintStart_toStartOf="@+id/tvListDataTeman"
-        app:layout_constraintTop_toBottomOf="@+id/tvListDataTeman" />
+        app:layout_constraintStart_toStartOf="@+id/btTampilNama"
+        app:layout_constraintTop_toBottomOf="@+id/btTampilNama" />
 
     <Button
         android:id="@+id/btBuatTableTeman"
