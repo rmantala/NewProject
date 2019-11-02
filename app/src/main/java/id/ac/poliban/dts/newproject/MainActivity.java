@@ -18,8 +18,6 @@ public class MainActivity extends AppCompatActivity {
 
     Button btTampilGambar;
 
-    Button btTampilLocationBaseServices;
-
     Button btBuatTable;
 
     @Override
@@ -41,8 +39,6 @@ public class MainActivity extends AppCompatActivity {
         btTampilDataTeman = findViewById(R.id.btTampilDataTeman);
 
         btTampilGambar = findViewById(R.id.btTampilGambar);
-
-        btTampilLocationBaseServices = findViewById(R.id.btTampilLocationBaseServices);
 
         btBuatTable = findViewById(R.id.btBuatTableTeman);
 
@@ -77,17 +73,9 @@ public class MainActivity extends AppCompatActivity {
             startActivity(intent);
         });
 
-        //location base service
-        btTampilLocationBaseServices.setOnClickListener(v -> {
-            Intent intent = new Intent(this, MapsActivity.class);
-            startActivity(intent);
-        });
-
         btBuatTable.setOnClickListener(v -> {
             FriendSQL db = new FriendSQL(this);
             Toast.makeText(this, "table friend berhasil dibuat", Toast.LENGTH_SHORT).show();
         });
-
-
     }
 }
